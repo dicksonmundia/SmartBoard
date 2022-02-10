@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ProfileEditCtr">
+   <ImageView fx:id="userProfileImg" fitHeight="210.0" fitWidth="247.0" layoutX="25.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../Images/user.png" />
+   </ImageView>
+   <Label layoutX="55.0" layoutY="294.0" onMouseClicked="#selectProfile" text="Click to select profile picture" />
+   <Label layoutX="306.0" layoutY="55.0" text="Username">
+      <font>
+         <Font name="System Bold" size="16.0" />
+      </font></Label>
+   <Label fx:id="lblUsername" layoutX="306.0" layoutY="81.0">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font></Label>
+   <Label layoutX="308.0" layoutY="125.0" text="First name" />
+   <TextField fx:id="txtFirstname" layoutX="306.0" layoutY="152.0" prefHeight="37.0" prefWidth="278.0" promptText="first name" />
+   <Label layoutX="310.0" layoutY="208.0" text="Last Name" />
+   <TextField fx:id="txtLastName" layoutX="308.0" layoutY="235.0" prefHeight="37.0" prefWidth="278.0" promptText="last name" />
+   <Button fx:id="okBtn" layoutX="360.0" layoutY="330.0" mnemonicParsing="false" onAction="#onOkAction" text="OK" />
+   <Button fx:id="onCancelBtn" layoutX="461.0" layoutY="330.0" mnemonicParsing="false" onAction="#onCancelAction" text="Cancel" />
+</AnchorPane>
